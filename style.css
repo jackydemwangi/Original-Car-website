@@ -1,0 +1,91 @@
+/* Step 1: Define our color palette */
+:root {
+  --dark-blue: #1E5A8E;
+  --orange: #CC5500;
+  --light-bg: #EBF3FC;
+}
+
+/* Step 2: Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Step 3: Style the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-bg);
+}
+/* Header styling */
+header {
+  background-color: var(--dark-blue);
+  color: orangered;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--dark-blue);
+  margin-bottom: 30px;
+}
+/* Car card styling */
+.car-card {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--orange);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-card h3 {
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.car-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+/* Smooth transition effect */
+.car-card {
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* Footer styling */
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+}
